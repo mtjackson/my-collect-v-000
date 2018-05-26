@@ -6,5 +6,8 @@ def my_collect(array)
       new_collection << yield(array[i].split(" ").first)
       i += 1
     end
-    array
+    new_collection
+  else
+    "No block given"
+  end
 end
