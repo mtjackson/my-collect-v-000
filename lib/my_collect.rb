@@ -3,7 +3,7 @@ def my_collect(array)
     i = 0
     new_collection = []
     while i < array.length
-      yield(array[i].split(" ").first)
+      new_collection << yield(array[i].split(" ").first)
       i += 1
     end
     array
